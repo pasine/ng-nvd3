@@ -295,7 +295,9 @@
                 tooltips: '@',
                 width: '@',
                 yrotatelabels: '@',
-                yformat: '&'
+                yformat: '&',
+                xlabel: '@',
+                ylabel: '@'
             },
             link: function (scope, element, attrs){
                 scope.$watch('data', function (data){
@@ -324,6 +326,20 @@
                                     .tickFormat(scope.yformat());
 
                             chart.width(scope.width).height(scope.height);
+                            
+                            if (scope.xlabel) {
+                                chart.xAxis
+                                    .axisLabel(scope.xlabel)
+                                    .tickFormat(d3.format(scope.xformat));
+                            }
+
+                            if (scope.ylabel) {
+                                chart.yAxis
+                                    .axisLabel(scope.ylabel)
+                                    .axisLabelDistance(42)
+                                    .tickFormat(d3.format(scope.yformat));
+                            }
+
 
                             d3.select('#' + scope.chartId +' svg').datum(scope.data)
                                 .attr('width', scope.width)

@@ -1,10 +1,10 @@
 {
     "name": "ng-nvd3",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./dist/ng-nvd3.js",
     "description": "AngularJs nvd3 directives",
     "authors": [
-        "sattarab"
+        "sattarab", "Ganesh Gunasegaran"
     ],
     "license": "MIT",
     "homepage": "https://github.com/sattarab/ng-nvd3/",

@@ -1,8 +1,8 @@
 {
     "name": "ng-nvd3",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
-        "sattarab"
+        "sattarab", "Ganesh Gunasegaran"
     ],
     "license": "MIT",
     "scripts": {
