@@ -324,6 +324,9 @@
                                 .yAxis
                                     .rotateLabels(scope.yrotatelabels)
                                     .tickFormat(scope.yformat());
+                            chart.tooltipContent(function (key, x, y) {
+                                return "<div class='bar-chart-tooltip'>" + y + "</div>";
+                            });
 
                             chart.width(scope.width).height(scope.height);
                             
