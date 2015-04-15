@@ -340,7 +340,15 @@
                                 chart.yAxis
                                     .axisLabel(scope.ylabel)
                                     .axisLabelDistance(42)
-                                    .tickFormat(d3.format(scope.yformat));
+                            }
+
+                            if(scope.yticks && scope.yticks < 10) {
+                                chart.yAxis
+                                .ticks([scope.yticks])
+                                .tickValues(_.times(scope.yticks, function(x){return x+1}));
+                            }
+                            else {
+                                chart.yAxis.tickFormat(d3.format(scope.yformat));
                             }
 
 
