@@ -322,8 +322,7 @@
                                 .transitionDuration(scope.duration == null ? 250 : scope.duration)
                                 .showControls(scope.showControls === 'true' ? true : false)
                                 .yAxis
-                                    .rotateLabels(scope.yrotatelabels)
-                                    .tickFormat(scope.yformat());
+                                .rotateLabels(scope.yrotatelabels);
                             chart.tooltipContent(function (key, x, y) {
                                 return "<div class='bar-chart-tooltip'>" + y + "</div>";
                             });
