@@ -297,7 +297,8 @@
                 yrotatelabels: '@',
                 yformat: '&',
                 xlabel: '@',
-                ylabel: '@'
+                ylabel: '@',
+                yticks: '='
             },
             link: function (scope, element, attrs){
                 scope.$watch('data', function (data){
