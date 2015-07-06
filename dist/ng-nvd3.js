@@ -172,7 +172,7 @@
                   .rotateLabels(scope.yrotatelabels)
                   .tickFormat(scope.yformat());
 
-                chart.showLegend(scope.hideLegend === 'false' ?
+                chart.showLegend(scope.hideLegend === 'true' ?
                   false : true);
 
                 d3.select('#' + scope.chartId + ' svg')
